@@ -12,7 +12,7 @@ A simple web application to track your daily progress, learning, and remarks as 
 ## Tech Stack
 
 - **Frontend**: HTML, CSS, JavaScript
-- **Backend (Optional)**: Node.js (Express.js) *(If adding backend functionality)*
+- Local storage of web browser for saving remarks
 - **Hosting**: GitHub Pages
 
 ## Live Demo
