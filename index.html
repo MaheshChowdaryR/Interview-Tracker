@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>📅 Interview Preparation Tracker</h1>
+
+    <!-- Calendar Section -->
+    <div class="calendar">
+        <div class="calendar-nav">
+            <button id="prev-month">&#8249;</button>
+            <h2 id="calendar-title">Calendar for [Month] [Year]</h2>
+            <button id="next-month">&#8250;</button>
+        </div>
+
+        <div class="calendar-grid">
+            <!-- Dates will be added dynamically using JavaScript -->
+        </div>
+
+        <!-- Year and Month Navigation -->
+        <div class="calendar-controls">
+            <button id="prev-year">&#x2B05;</button>
+            <select id="year-selector"></select>
+            <button id="next-year">&#x27A1;</button>
+        </div>
+    </div>
+
+    <!-- Task and Remark Section -->
+    <div class="content">
+        <div class="tracker">
+            <h2>✅ Daily Checklist for <span id="selected-date">[Select a Date]</span></h2>
+            <ul id="task-list">
+                <li><input type="checkbox"> Learn HTML & CSS Basics</li>
+                <li><input type="checkbox"> Practice JavaScript Problems</li>
+                <li><input type="checkbox"> Solve 2 DSA Questions</li>
+                <li><input type="checkbox"> Revise One Data Structure</li>
+                <li><input type="checkbox"> Read One System Design Topic</li>
+                <li><input type="checkbox"> Mock Interview Practice</li>
+            </ul>
+        </div>
+
+        <!-- Remarks Section -->
+        <div class="remarks">
+            <h2>📝 Notes for <span id="remark-date">[Select a Date]</span></h2>
+            <textarea id="remark-text" placeholder="Write what you learned today..."></textarea>
+            <button id="save-remark">Save Remark</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
